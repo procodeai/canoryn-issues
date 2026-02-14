@@ -1,5 +1,5 @@
 name: Feature request
-description: Propose a new feature or improvement for Canoryn (Aura).
+description: Propose a new feature or improvement for Canoryn.
 title: "[Feature]: "
 labels: ["enhancement", "needs-triage"]
 body:
@@ -54,4 +54,3 @@ body:
       label: Expected impact
       description: Who benefits and how often this would be used.
       placeholder: This helps by...
-

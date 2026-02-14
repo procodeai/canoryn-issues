@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Canoryn Documentation
+    url: https://github.com/procodeai/aura-docs
+    about: Check docs and guides before filing an issue.
