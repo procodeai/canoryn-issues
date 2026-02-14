@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible issue in Canoryn.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please fill all required fields so we can reproduce quickly.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      placeholder: e.g. 1.2.3 (build 456)
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 15.4.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Chat UI
+        - Floating Voice UI
+        - Graph / Blueprint
+        - Trigger / Automation
+        - Settings
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / diagnostics (optional)
+      description: Paste relevant logs or diagnostics here.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context (optional)
+      description: Screenshots, videos, related issues, etc.

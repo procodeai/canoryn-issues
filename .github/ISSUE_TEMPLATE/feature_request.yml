@@ -1,0 +1,57 @@
+name: Feature request
+description: Propose a new feature or improvement for Canoryn (Aura).
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Clear use-cases help us prioritize better.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What pain point are you facing today?
+      placeholder: I want to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: What should Canoryn do?
+      placeholder: It should...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      placeholder: I tried...
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Intelligence / Chat
+        - Voice / Floating Assistant
+        - Graph / Blueprint
+        - Triggers / Automation
+        - Memory / Context
+        - Integrations
+        - Settings / UX
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Who benefits and how often this would be used.
+      placeholder: This helps by...
+
