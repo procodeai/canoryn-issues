@@ -1,0 +1,53 @@
+name: Crash report
+description: Canoryn quit unexpectedly. The app opens this with everything it knows already filled in.
+title: "[Crash]: "
+labels: ["crash", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Canoryn filled in what it knows. You can submit this as it is.
+
+        The one thing it cannot know is **what you were doing** — a single line there is the most useful thing you can add. The full report is on your clipboard if you want to paste it at the bottom.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Mac
+      description: Model, architecture, and how long Canoryn had been running.
+
+  - type: textarea
+    id: crash
+    attributes:
+      label: What happened
+      description: The exception and the crashed thread, from the report macOS wrote. Frames in Canoryn itself show as offsets; we symbolicate them from the release's debug symbols.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What were you doing? (optional)
+      placeholder: e.g. switching commits in Review with a large diff open
+
+  - type: textarea
+    id: report
+    attributes:
+      label: Full report (optional)
+      description: Paste from your clipboard — Canoryn copied the whole .ips when it opened this page.
+      render: text
